@@ -36,8 +36,8 @@ function App() {
 function ImageOptions() {
         var div = document.getElementById('imgModal');
         var active = false;
-        var currentX;
-        var currentY;
+        var currentX = 0;
+        var currentY = 0;
         var initialX;
         var initialY;
         var xOffset = 0;
@@ -49,7 +49,7 @@ function ImageOptions() {
           var div = document.getElementById('imgModal');
           rotation = rotation + 1;
           div.style.transform = 'rotate('+90*rotation+'deg) scale('+ scale +') translate(' + xPos + 'px, ' + yPos + 'px)';
-          // marquer les différents transform en une seule fpois permet de ne pas annuler les précédents
+          // marquer les différents transform en une seule fois permet de ne pas annuler les précédents
         }
 
         function zoomIn() {
