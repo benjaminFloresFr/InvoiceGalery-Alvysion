@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font: 'Roboto';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.imgArea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgGalery {
+  margin: 10px 10px 10px 10px;
+  height: 250px;
+  width: 250px;
+  cursor: pointer;
+  overflow: hidden;
 }
